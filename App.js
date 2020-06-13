@@ -1,19 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, Image, SafeAreaView, Button, Alert, View, TouchableNativeFeedback } from 'react-native';
+import Search from './components/Search';
 
 export default function App() {
+  const handleClick = () => {
+    Alert.alert('Info', 'Button clicked');
+  };
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <Search />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
